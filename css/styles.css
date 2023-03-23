@@ -1,1 +1,140 @@
-/* dev styles go here */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-container {
+    padding: 1rem;
+}
+
+/* ***************** typography ***************** */
+h2,
+h3 {
+    color: #dc413e;
+    text-transform: uppercase;
+    font-size: 3.75rem;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* ***************** header ***************** */
+header {
+    background-color: #000;
+}
+
+header svg {
+    fill: #fff;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu a {
+    color: #fff;
+    text-transform: uppercase;
+    display: block; 
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:active {
+    color: #dc413e;
+}
+
+.menu li {
+    flex: 1 0 calc(50% - 1rem);
+}
+
+/* ***************** form ***************** */
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+label {
+    display: block;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 3px #e8e8e8;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 300px;
+}
+
+input[type="cheackbox"] {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+label[for="accept"] {
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    width: unset;
+    border: none;
+    background: #fff;
+    box-shadow: none;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: padding-left 1s ease;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    color: #dc413e;
+}
+
+@media screen and (min-width: 1260px) {
+    .menu li {
+        flex: 0;
+    }
+
+    fieldset {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    fieldset > div {
+        flex: 1 0 calc(50% - 3rem);
+    }
+
+    h3 {
+        width: 100%;
+    }
+
+    textarea {
+        width: calc(50% - 1.5rem);
+    }
+
+    .inner-container {
+        padding: 1rem 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
